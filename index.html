@@ -226,7 +226,70 @@
         font-display: swap;
         src: url(https://beta.flockthemes.com/dove-wedding/demo2/wp-content/fonts/playfair-display/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtXK-F2qO0g.woff) format('woff');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    }</style>
+    }
+
+    .simply-countdown {
+        /* The countdown */
+        margin-bottom: 2em;
+    }
+
+    .simply-countdown > .simply-section {
+        /* coutndown blocks */
+        display: inline-block;
+        width: 120px;
+        height: 130px;
+        background: rgba(241, 78, 149, 0.8);
+        margin: 0 4px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        position: relative;
+        animation: pulse 1s ease infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .simply-countdown > .simply-section > div {
+        /* countdown block inner div */
+        display: table-cell;
+        vertical-align: middle;
+        height: 120px;
+        width: 155px;
+    }
+
+    .simply-countdown > .simply-section .simply-amount,
+    .simply-countdown > .simply-section .simply-word {
+        display: block;
+        color: white;
+        /* amounts and words */
+    }
+
+    .simply-countdown > .simply-section .simply-amount {
+        font-size: 30px;
+        /* amounts */
+    }
+
+    .simply-countdown > .simply-section .simply-word {
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        font-size: 12px;
+        /* words */
+    }
+
+
+
+    </style>
 </head>
 <body class="home page-template page-template-template page-template-fluid page-template-templatefluid-php page page-id-661 custom-background siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home">
 <div id="page" class="site">
@@ -404,12 +467,13 @@
                                             <div class="wedding-date panel-widget-style panel-widget-style-for-661-0-0-1">
                                                 <div id="pl-w61c45f9f04ec0" class="panel-layout">
                                                     <div id="pg-w61c45f9f04ec0-0" class="panel-grid panel-has-style">
-                                                        <div id="wedding"
+                                                        <div id="wedding" style="padding: 3%"
                                                              class="panel-row-style panel-row-style-for-w61c45f9f04ec0-0">
                                                             <div id="pgc-w61c45f9f04ec0-0-0" class="panel-grid-cell">
                                                                 <div id="panel-w61c45f9f04ec0-0-0-0"
                                                                      class="so-panel widget widget_text panel-first-child panel-last-child"
                                                                      data-index="0">
+                                                                    <br />
                                                                     <div class="wow zoomIn panel-widget-style panel-widget-style-for-w61c45f9f04ec0-0-0-0"
                                                                          data-wow-duration="2s" data-wow-offset="10"
                                                                          data-wow-iteration="1"><h3
@@ -417,6 +481,17 @@
                                                                         <div class="textwidget"><h2>19/11/2022</h2>
                                                                             <h3>November 19, 2023 <br>
                                                                                 11AM</h3>
+                                                                            <br />
+                                                                            <div class="wow zoomIn panel-widget-style panel-widget-style-for-w61c45f9f04ec0-0-0-0"
+                                                                                 data-wow-duration="2s" data-wow-offset="10"
+                                                                                 data-wow-iteration="1">
+                                                                                <h3 class="widget-title">
+                                                                                    Cùng nhau đếm ngược
+                                                                                </h3>
+                                                                                <br />
+                                                                                <div class="simply-countdown simply-countdown-one"></div>
+                                                                            </div>
+                                                                            <br />
                                                                             <h4>Đội 1, thôn Tân Giáo, Xã Tân Mộc
                                                                             </h4>
                                                                             <h3>Huyện Lục Ngạn<br> Bắc Giang
@@ -435,7 +510,7 @@
                                             <div class="couple white-border panel-widget-style panel-widget-style-for-661-0-0-2">
                                                 <div id="pl-w59104fbc70283" class="panel-layout">
                                                     <div id="pg-w59104fbc70283-0" class="panel-grid panel-has-style">
-                                                        <div id="couple"
+                                                        <div id="couple" style="padding: 3%"
                                                              class="panel-row-style panel-row-style-for-w59104fbc70283-0">
                                                             <div id="pgc-w59104fbc70283-0-0" class="panel-grid-cell">
                                                                 <div id="panel-w59104fbc70283-0-0-0"
@@ -559,7 +634,7 @@
                                             <div class="parents white-border panel-widget-style panel-widget-style-for-661-0-0-3">
                                                 <div id="pl-w59104bbd1805b" class="panel-layout">
                                                     <div id="pg-w59104bbd1805b-0" class="panel-grid panel-has-style">
-                                                        <div id="parents"
+                                                        <div id="parents" style="padding: 3%"
                                                              class="panel-row-style panel-row-style-for-w59104bbd1805b-0">
                                                             <div id="pgc-w59104bbd1805b-0-0" class="panel-grid-cell">
                                                                 <div id="panel-w59104bbd1805b-0-0-0"
@@ -650,7 +725,7 @@
                                             <div class="events panel-widget-style panel-widget-style-for-661-0-0-4">
                                                 <div id="pl-w59104bbd183b1" class="panel-layout">
                                                     <div id="pg-w59104bbd183b1-0" class="panel-grid panel-has-style">
-                                                        <div id="events"
+                                                        <div id="events" style="padding: 3%"
                                                              class="panel-row-style panel-row-style-for-w59104bbd183b1-0">
                                                             <div id="pgc-w59104bbd183b1-0-0" class="panel-grid-cell">
                                                                 <div id="panel-w59104bbd183b1-0-0-0"
@@ -798,7 +873,7 @@
                                             <div class="rsvp form-style2 panel-widget-style panel-widget-style-for-661-0-0-6">
                                                 <div id="pl-w59104bbd19026" class="panel-layout">
                                                     <div id="pg-w59104bbd19026-0" class="panel-grid panel-has-style">
-                                                        <div id="rsvp"
+                                                        <div id="rsvp" style="padding: 3%"
                                                              class="panel-row-style panel-row-style-for-w59104bbd19026-0">
                                                             <div id="pgc-w59104bbd19026-0-0" class="panel-grid-cell">
                                                                 <div id="panel-w59104bbd19026-0-0-0"
@@ -894,7 +969,7 @@
                                             <div class="gifts panel-widget-style panel-widget-style-for-661-0-0-7">
                                                 <div id="pl-w59104bbd190a6" class="panel-layout">
                                                     <div id="pg-w59104bbd190a6-0" class="panel-grid panel-has-style">
-                                                        <div id="gifts"
+                                                        <div id="gifts" style="padding: 3%"
                                                              class="panel-row-style panel-row-style-for-w59104bbd190a6-0">
                                                             <div id="pgc-w59104bbd190a6-0-0" class="panel-grid-cell">
                                                                 <div id="panel-w59104bbd190a6-0-0-0"
@@ -1020,7 +1095,7 @@
                                             <div class="gallery panel-widget-style panel-widget-style-for-661-0-0-8">
                                                 <div id="pl-w5910260805dfa" class="panel-layout">
                                                     <div id="pg-w5910260805dfa-0" class="panel-grid panel-has-style">
-                                                        <div id="gallery"
+                                                        <div id="gallery" style="padding: 3%"
                                                              class="panel-row-style panel-row-style-for-w5910260805dfa-0">
                                                             <div id="pgc-w5910260805dfa-0-0" class="panel-grid-cell">
                                                                 <div id="panel-w5910260805dfa-0-0-0"
@@ -1154,7 +1229,7 @@
                                             <div class="journal panel-widget-style panel-widget-style-for-661-0-0-9">
                                                 <div id="pl-w5910260805e65" class="panel-layout">
                                                     <div id="pg-w5910260805e65-0" class="panel-grid panel-has-style">
-                                                        <div id="journal"
+                                                        <div id="journal" style="padding: 3%"
                                                              class="panel-row-style panel-row-style-for-w5910260805e65-0">
                                                             <div id="pgc-w5910260805e65-0-0" class="panel-grid-cell">
                                                                 <div id="panel-w5910260805e65-0-0-0"
@@ -1186,15 +1261,6 @@
                                                                                         <div class="container-fluid py-5"
                                                                                              id="story">
                                                                                             <div class="container pt-5 pb-3">
-                                                                                                <div class="section-title position-relative text-center">
-                                                                                                    <h6 class="text-uppercase text-primary mb-3"
-                                                                                                        style="letter-spacing: 3px;">
-                                                                                                        Story</h6>
-                                                                                                    <h1 class="font-secondary display-4">
-                                                                                                        Our Love
-                                                                                                        Story</h1>
-                                                                                                    <i class="far fa-heart text-dark"></i>
-                                                                                                </div>
                                                                                                 <div class="container timeline position-relative p-0">
                                                                                                     <div class="row">
                                                                                                         <div class="col-md-6 text-center text-md-right">
@@ -1375,7 +1441,7 @@
                                             <div class="people panel-widget-style panel-widget-style-for-661-0-0-5">
                                                 <div id="pl-w59104bbd1889e" class="panel-layout">
                                                     <div id="pg-w59104bbd1889e-0" class="panel-grid panel-has-style">
-                                                        <div id="people"
+                                                        <div id="people" style="padding: 3%"
                                                              class="panel-row-style panel-row-style-for-w59104bbd1889e-0">
                                                             <div id="pgc-w59104bbd1889e-0-0" class="panel-grid-cell">
                                                                 <div id="panel-w59104bbd1889e-0-0-0"
@@ -1409,17 +1475,17 @@
                                                                                      class="panel-grid-cell">
                                                                                     <div id="panel-w59104bbd1890e-1-0-0"
                                                                                          class="so-panel widget widget_sow-editor panel-first-child"
-                                                                                         data-index="1">
-                                                                                        <div class="wow fadeIn panel-widget-style panel-widget-style-for-w59104bbd1890e-1-0-0"
+                                                                                         data-index="3">
+                                                                                        <div class="wow fadeIn panel-widget-style panel-widget-style-for-w59104bbd1890e-1-1-0"
                                                                                              data-wow-duration="2s"
                                                                                              data-wow-offset="10"
                                                                                              data-wow-iteration="1">
                                                                                             <div class="so-widget-sow-editor so-widget-sow-editor-base">
                                                                                                 <div class="siteorigin-widget-tinymce textwidget">
                                                                                                     <img data-lazyloaded="1"
-                                                                                                         src="./img/img_2.png"
+                                                                                                         src="./img/image_10.jpeg"
                                                                                                          loading="lazy"
-                                                                                                         class="alignnone size-full wp-image-800"
+                                                                                                         class="alignnone size-full wp-image-713"
                                                                                                          alt=""
                                                                                                          width="800"
                                                                                                          height="900"
@@ -1428,22 +1494,46 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div id="panel-w59104bbd1890e-1-0-1"
-                                                                                         class="so-panel widget widget_text panel-last-child"
-                                                                                         data-index="2">
-                                                                                        <br />
-                                                                                        <div class="wow fadeIn people-text dv_xs_vspacer panel-widget-style panel-widget-style-for-w59104bbd1890e-1-0-1"
-                                                                                             data-wow-duration="2s"
-                                                                                             data-wow-offset="10"
-                                                                                             data-wow-iteration="1"><h
-                                                                                                class="widget-title">
-                                                                                            Chú rể</h>
-                                                                                        </div>
-                                                                                    </div>
                                                                                 </div>
                                                                                 <div id="pgc-w59104bbd1890e-1-1"
                                                                                      class="panel-grid-cell">
                                                                                     <div id="panel-w59104bbd1890e-1-1-0"
+                                                                                         class="so-panel widget widget_sow-editor panel-first-child"
+                                                                                         data-index="3">
+                                                                                        <div class="wow fadeIn panel-widget-style panel-widget-style-for-w59104bbd1890e-1-1-0"
+                                                                                             data-wow-duration="2s"
+                                                                                             data-wow-offset="10"
+                                                                                             data-wow-iteration="1">
+                                                                                            <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                                                                                                <div class="siteorigin-widget-tinymce textwidget">
+                                                                                                    <img data-lazyloaded="1"
+                                                                                                         src="./img/img_2.png"
+                                                                                                         loading="lazy"
+                                                                                                         class="alignnone size-full wp-image-713"
+                                                                                                         alt=""
+                                                                                                         width="800"
+                                                                                                         height="900"
+                                                                                                         data-sizes="(max-width: 800px) 100vw, 800px"/>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div id="panel-w59104bbd1890e-1-0-1"
+                                                                                                 class="so-panel widget widget_text panel-last-child"
+                                                                                                 data-index="2">
+                                                                                                <br />
+                                                                                                <div class="wow fadeIn people-text dv_xs_vspacer panel-widget-style panel-widget-style-for-w59104bbd1890e-1-0-1"
+                                                                                                     data-wow-duration="2s"
+                                                                                                     data-wow-offset="10"
+                                                                                                     data-wow-iteration="1"><h
+                                                                                                        class="widget-title">
+                                                                                                    Cô dâu</h>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div id="pgc-w59104bbd1890e-1-2"
+                                                                                     class="panel-grid-cell">
+                                                                                    <div id="panel-w59104bbd1890e-1-2-0"
                                                                                          class="so-panel widget widget_sow-editor panel-first-child"
                                                                                          data-index="3">
                                                                                         <div class="wow fadeIn panel-widget-style panel-widget-style-for-w59104bbd1890e-1-1-0"
@@ -1465,42 +1555,6 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div id="pgc-w59104bbd1890e-1-2"
-                                                                                     class="panel-grid-cell">
-                                                                                    <div id="panel-w59104bbd1890e-1-2-0"
-                                                                                         class="so-panel widget widget_sow-editor panel-first-child"
-                                                                                         data-index="3">
-                                                                                        <div class="wow fadeIn panel-widget-style panel-widget-style-for-w59104bbd1890e-1-1-0"
-                                                                                             data-wow-duration="2s"
-                                                                                             data-wow-offset="10"
-                                                                                             data-wow-iteration="1">
-                                                                                            <div class="so-widget-sow-editor so-widget-sow-editor-base">
-                                                                                                <div class="siteorigin-widget-tinymce textwidget">
-                                                                                                    <img data-lazyloaded="1"
-                                                                                                         src="./img/img_3.png"
-                                                                                                         loading="lazy"
-                                                                                                         class="alignnone size-full wp-image-713"
-                                                                                                         alt=""
-                                                                                                         width="800"
-                                                                                                         height="900"
-                                                                                                         data-sizes="(max-width: 800px) 100vw, 800px"/>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div id="panel-w59104bbd1890e-1-1-1"
-                                                                                         class="so-panel widget widget_text panel-last-child"
-                                                                                         data-index="4">
-                                                                                        <br />
-                                                                                        <div class="wow fadeIn people-text dv_xs_vspacer panel-widget-style panel-widget-style-for-w59104bbd1890e-1-1-1"
-                                                                                             data-wow-duration="2s"
-                                                                                             data-wow-offset="10"
-                                                                                             data-wow-iteration="1"><h
-                                                                                                class="widget-title">
-                                                                                            Cô dâu</h>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
                                                                             </div>
                                                                             <br />
                                                                             <br />
@@ -1513,6 +1567,82 @@
                                                                                         class="text-capitalize">
                                                                                     Mãi mãi hạnh phúc nhé !</h3>
                                                                                 </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="panel-661-0-0-10"
+                                             class="so-panel widget widget_siteorigin-panels-builder" data-index="10">
+                                            <div class="people panel-widget-style panel-widget-style-for-661-0-0-5">
+                                                <div id="pl-w59104bbd1899e" class="panel-layout">
+                                                    <div id="pg-w59104bbd1899e-0" class="panel-grid panel-has-style">
+                                                        <div id="map" style="padding: 3%; margin-left: 30%"
+                                                             class="panel-row-style panel-row-style-for-w59104bbd1889e-0">
+                                                            <div id="pgc-w59104bbd1888e-0-0" class="panel-grid-cell">
+                                                                <div id="panel-w59104bbd1899e-0-0-0"
+                                                                     class="so-panel widget widget_siteorigin-panels-builder panel-first-child panel-last-child"
+                                                                     data-index="0">
+                                                                    <div class="container panel-widget-style panel-widget-style-for-w59104bbd1889e-0-0-0">
+                                                                        <div id="pl-w59104bbd1891e"
+                                                                             class="panel-layout">
+                                                                            <div id="pg-w59104bbd1891e-0"
+                                                                                 class="panel-grid panel-no-style">
+                                                                                <div id="pgc-w59104bbd1891e-0-0"
+                                                                                     class="panel-grid-cell">
+                                                                                    <div id="panel-w59104bbd1891e-0-0-0"
+                                                                                         class="so-panel widget widget_text panel-first-child panel-last-child"
+                                                                                         data-index="0">
+                                                                                        <div class="wow fadeInUp section-title panel-widget-style panel-widget-style-for-w59104bbd1890e-0-0-0"
+                                                                                             data-wow-offset="10"
+                                                                                             data-wow-iteration="1"><h3
+                                                                                                class="widget-title">
+                                                                                            Cùng nhau đến đây nhé !</h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div id="pgc-w59104bbd1891e-1-1"
+                                                                                         class="panel-grid-cell" style="margin-left: 30%;">
+                                                                                        <img data-lazyloaded="1" style="border-radius: 30%"
+                                                                                             src="./img/School Bus.gif"
+                                                                                             loading="lazy"
+                                                                                             class="alignnone size-full wp-image-713"
+                                                                                             alt=""
+                                                                                             width="200"
+                                                                                             height="200"
+                                                                                             data-sizes="(max-width: 800px) 100vw, 800px"/>
+                                                                                    </div>
+                                                                                    <br />
+                                                                                    <div id="pgc-w59104bbd1891e-1-2"
+                                                                                         class="panel-grid-cell">
+                                                                                        <div id="panel-w59104bbd1891e-1-2-0"
+                                                                                             class="so-panel widget widget_sow-editor panel-first-child"
+                                                                                             data-index="3">
+                                                                                            <div class="wow fadeIn panel-widget-style panel-widget-style-for-w59104bbd1890e-1-1-0"
+                                                                                                 data-wow-duration="2s"
+                                                                                                 data-wow-offset="10"
+                                                                                                 data-wow-iteration="1">
+                                                                                                <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                                                                                                    <div class="siteorigin-widget-tinymce textwidget">
+                                                                                                        <img data-lazyloaded="1"
+                                                                                                             src="./img/img_4.png"
+                                                                                                             loading="lazy"
+                                                                                                             class="alignnone size-full wp-image-713"
+                                                                                                             alt=""
+                                                                                                             width="600"
+                                                                                                             height="700"
+                                                                                                             data-sizes="(max-width: 800px) 100vw, 800px"/>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1545,12 +1675,32 @@
         </div>
     </footer>
 </div>
+<script src="wp-includes/js/simplyCountdown.js"></script>
 <script>jQuery(document).ready(function ($) {
     'use strict';
     if ('function' === typeof WOW) {
         new WOW().init()
     }
 })</script>
+<script>
+    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+
 <script data-optimized="1"
         type="text/javascript">var sbiajaxurl = "https://beta.flockthemes.com/dove-wedding/demo2/wp-admin/admin-ajax.php"</script>
 <style type="text/css" media="all"
