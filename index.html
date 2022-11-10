@@ -1782,14 +1782,19 @@
             'value3': document.getElementById("form-address").value,
         }
         console.log(data)
-        const response = fetch('https://script.google.com/macros/s/AKfycbwbzx-yPfoCce2hzT5a7-XRUmJJPS0Ce4nhJnhziuaRs1K4jie1v9SCis3MszoUp8RT/exec', {
+        const response = fetch('https://script.google.com/macros/s/AKfycby4pk_p4hcFBEtL5Pll-OrOUHmBB8EfTkaSc7W1dQJjMfkdjGToc7WieZzQW4jVwp6t/exec', {
             method: 'POST',
-            body: data, // string or object
+            body: JSON.stringify(data), // string or object,
+            mode: 'no-cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-
             headers: {
                 'Content-Type': 'application/json'
-            }
-        });
-        const myJson = response.json();
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-
+        }).then({
+
+        }). catch({})
 
         document.getElementById("form-name").value = '';
         document.getElementById("form-address").value ='';
