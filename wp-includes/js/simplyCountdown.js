@@ -114,10 +114,11 @@
      * @param args (parameters)
      */
     simplyCountdown = function (elt, args) {
+
         var parameters = extend({
                 year: 2022,
-                month: 6,
-                day: 28,
+                month: 11,
+                day: 19,
                 hours: 0,
                 minutes: 0,
                 seconds: 0,
@@ -157,7 +158,7 @@
             parameters.year,
             parameters.month - 1,
             parameters.day,
-            parameters.hours,
+            parameters.hours + 7,
             parameters.minutes,
             parameters.seconds
         );
@@ -166,7 +167,7 @@
             targetDate = new Date(
                 targetTmpDate.getUTCFullYear(),
                 targetTmpDate.getUTCMonth(),
-                targetTmpDate.getUTCDate(),
+                targetTmpDate.getUTCDate() + 5 ,
                 targetTmpDate.getUTCHours(),
                 targetTmpDate.getUTCMinutes(),
                 targetTmpDate.getUTCSeconds()
@@ -190,7 +191,6 @@
                     nowUtc = new Date(now.getFullYear(), now.getMonth(), now.getDate(),
                         now.getHours(), now.getMinutes(), now.getSeconds());
                     secondsLeft = (targetDate - nowUtc.getTime()) / 1000;
-
                 } else {
                     secondsLeft = (targetDate - now.getTime()) / 1000;
                 }
